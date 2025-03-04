@@ -137,9 +137,9 @@ function changeLanguage() {
 
 
 const imageMap = {
-    "ja": "./スクリーンショット 2025-02-27 135308.png",
-    "en": "./スクリーンショット 2025-03-01 192635.png",
-    "ta": "./スクリーンショット 2025-03-03 165834.png",
+    "ja": "./assets/html/スクリーンショット 2025-02-27 135308.png",
+    "en": "./assets/html/スクリーンショット 2025-03-01 192635.png",
+    "ta": "./assets/html/スクリーンショット 2025-03-03 165834.png",
 };
 const language = document.getElementById("language");
 const displayImage = document.getElementById("displayImage");
