@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Let's ski</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Yomogi&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+ 
+</head>
+
+<body>
+    <!-- トップ -->
+       <div class="top-page">
+          <header>
+              <ul class="nav">
+                
+                <div class="language-selector">
+                  <label for="language">Language:</label>
+                  <select id="language" onchange="changeLanguage()">
+                      <option value="ja">日本語</option>
+                      <option value="en">English</option>
+                      <option value="ta">tagalog</option>
+                  </select>
+              </div>
+                 <li class="list"><a href="#Purpose" class="listcolor" id="home1">始め方</a></li>
+                 <li class="list"><a href="#Movie" class="listcolor" id="home2">おすすめ動画</a></li>
+                 <li class="list"><a href="#Gelande" class="listcolor" id="home3">ゲレンデ情報</a></li>
+                 <li class="list"><a href="#News" class="listcolor"  id="home4">ニュース</a></li>
+                 <li class="list"><a href="#Lesson" class="listcolor"  id="home5">レッスン申し込み</a></li>
+
+                 <div class="humber">
+                 <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+                   <label for="menu-toggle" class="menu-button">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                   </label>
+                   <nav class="menu">
+                    <a href="#Purpose" class="listcolor" id="hom1">始め方</a>
+                    <a href="#Movie" class="listcolor" id="hom2">おすすめ動画</a>
+                    <a href="#Gelande" class="listcolor" id="hom3">ゲレンデ情報</a>
+                    <a href="#News" class="listcolor" id="hom4">ニュース</a>
+                    <a href="#Lesson" class="listcolor" id="hom5">レッスン申し込み</a>
+                   </nav>
+                  </div>
+              </ul>
+         </header>
+
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./pic1.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./pic2.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./pic3.jpg" class="d-block" alt="...">
+            </div>
+            <h1 id="title">Let's ski!</h1>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+           
+        </div>
+       </div>
+    <!-- 始め方 -->
+  <section>
+       <div class="purpose">
+         <h1 id="Purpose">始め方</h1>
+         <div class="mokume">
+        <img src="./スクリーンショット 2025-02-27 135308.png" alt="" class="howtoStart" id="displayImage">
+      </div>
+
+
+       </div>
+  </section>
+    <!-- 動画 -->
+  <section class="movie">
+    <h1 id="Movie">おすすめ動画</h1>
+    <div class="video-grid">
+      <div class="video-item">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0PSW9ZRLASc?si=Y-h5UZjvOY9mQq6L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-item">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/R9w1jpHgvXc?si=3ozz6RZ0EiVkRXNH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-item">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WTJhHshQR1U?si=aw5gdw43Pq4Or31l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-item">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7VNRGje8gNE?si=VPvxErV7vbeEVeSD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+  </div>
+  </section>
+
+  
+  <!-- ゲレンデ -->
+  <section class="gelande">
+   <h1 id="Gelande">ゲレンデ情報</h1>
+    <div class="waku">
+    
+    <div class="uper">
+      <a href="https://ryuoo.com/winter/" class="toLinkGel">
+        <img src="./ryuoo-2.jpg.webp" alt="" class="gelPic"></a>
+      <a href="https://www.maiko-resort.com/" class="toLinkGel">
+        <img src="./niigata_maiko_1-12.jpg.webp" alt="" class="gelPic"></a>
+        <a href="https://zaomountainresort.com/ski/" class="toLinkGel">
+        <img src="./a8a99ce5dc13ef5260c159978cde2f04ad509259.jpg" alt="" class="gelPic"></a>
+      
+  </div>
+  <div class="uper">
+      
+      <a href="https://www.listel-inawashiro.jp/" class="toLinkGel">
+      <img src="./kankotop-min.jpg.webp" alt="" class="gelPic"></a>
+      <a href="https://www.madarao.jp/" class="toLinkGel">
+          <img src="./madarao_view-1.jpg" alt="" class="gelPic"></a>
+      <a href="https://www.princehotels.co.jp/naeba/?utm_source=google&utm_medium=cpc&utm_campaign=general&utm_term=ski&gclid=CjwKCAiAt4C-BhBcEiwA8Kp0CXR-L9iCBEqvuR5Xsy2KtKc8ue-TfvNBDQlX14HsaHsNvdnUNbBKRhoCByMQAvD_BwE" class="toLinkGel">
+          <img src="./d83c60e1490118acd5dfbfe6affbd026e1bdb717.jpg" alt="" class="gelPic"></a>
+  </div>
+  </div>
+
+
+ </section>
+  
+  <!-- ニュース -->
+  <section class="news">
+    <h1 id="News">ニュース</h1>
+    <ul class="list-unstyled">
+      <a href="https://surfsnow.jp/article/ski-snowboard/detail/basicski2025/">
+        <li class="media">
+          <img src="https://surfsnow.jp/realimg_report/959/ogimg.jpg" class="mr-3" alt="...">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1" id="maru1">スキー選びに迷ってる人向け！安心の定番スキー6選</h5>
+            <div class="coment" id="m1">
+            誰にとっても乗りやすく、どんな場面でも扱いやすい定番モデルは、時代とともに滑りのトレンドやテクノロジー、ライダーの求めるものに合わせて進化を続け、洗練され、選ばれ続けてきたもの。最新の技術や潮流を取り入れた定番スキーは、初中級者のスキルアップをサポートしてくれる心強い存在だ。</div>
+          </div>
+        </li></a>
+      <a href="https://surfsnow.jp/page/stc/tokushu/orion_tour/">
+        <li class="media my-4">
+          <img src="https://surfsnow.jp/tokushu/img/thumbnail_03.jpg" class="mr-3" alt="...">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1" id="maru2">2024~2025　オリオンツアー特集</h5>
+            <div class="coment" id="m2">
+            スキー＆スノボバスツアー！オリオンツアーが提供する全国１００か所以上のスキー場のツアーを取り扱い！関東近畿、長野、新潟、それぞれの人気スキー場ご紹介！</div>
+          </div>
+        </li></a>
+      <a href="https://surfsnow.jp/article/event/detail/snowsurfinlesson-report/" class="gotoLink">
+        <li class="media">
+          <img src="https://surfsnow.jp/realimg_report/725/ogimg.png" class="mr-3" alt="...">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1" id="maru3">スノーボードが楽しく安全に滑れる!?<br> スノーサーフィンレッスンキャンプ(SSLC) 体験レポート</h5>
+            <div class="coment" id="m3">
+            今シーズンは基本をしっかりと抑え安全にスノーボードを更に上達をしたいと考えていたSURF&SNOWスタッフ。
+            安全に楽しく上達できるスノーサーフィンのレッスン「スノーサーフィンレッスンキャンプ(SSLC) 」があることを知り、早速体験してきたので、当日の様子をレポートします。</div>
+          </div>
+        </li>
+      </a>
+      <a href="https://surfsnow.jp/article/" id="morelook">
+        もっと見る→
+      </a>
+
+
+    </ul>
+  </section>
+  
+  <!-- レッスン -->
+  <section class="lesson">
+    <h1 id="Lesson">レッスン・スクール申し込み</h1>
+
+    <div class="recomendLesson">
+      <h2 class="recomendText" id="Osusume">～おすすめのスクール～</h2>
+    <div class="card-deck">
+      <div class="card">
+        <a href="https://steach.jp/snow/school/detail.php?id=1029"><img src="./get-resimg.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title" id="maru4">サンメドウズスキースクール【常設】</h5>
+          <p class="card-text" id="m4">サンメドウズ清里スキー場（山梨県）<br>ビギナー大歓迎！さらに腕を上げたい方も、楽しいレッスンでレベルアップ間違いなし。
+            スキー・スノーボードを遊びながら6つのステップで上達するプログラム「スキッズ・キャンプ」が人気です。</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://steach.jp/snow/school/detail.php?id=1101"><img src="./get-resimg (1).jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title" id="maru5">野沢温泉スキースクール【常設】</h5>
+          <p class="card-text" id="m5">野沢温泉スキー場（長野県）<br>野沢温泉スキー場の広大で変化に富んだゲレンデ、コースを使用したレッスン。初めてスキー・スノーボードをされる方から上級者の方まで、お客様の技術にあわせたレッスンをご提案。個人や仲間で楽しくレベルアップしたい方や家族で楽しく滑りたい、ゲレンデ巡りをしたいというお客様には、お気に入りの先生を指名することもできるプライベートレッスンや、競技スキーコーチの派遣も行っております。雪も絶景も温泉も全て天然100％。本物の感動と楽しさがある日本最大級のビッグスノーエリア野沢温泉スキー場で、是非、最高の冬を楽しんでください！</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://steach.jp/snow/school/detail.php?id=1142"><img src="./get-resimg (2).jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title" id="maru6">SIA公認 乗鞍プロスキースクール【常設】</h5>
+          <p class="card-text" id="m6">Mt.乗鞍スノーリゾート（長野県）<br>スノースポーツの上達には基本をマスターする事が大切です。
+            NPSSでは基本から応用技術まで　分かりやすく丁寧にレッスン致します。
+            この機会に是非入校してみてはいかがでしょうか。
+            英語　インドネシア語　マレー語のレッスンにも対応致します
+            宿泊をご希望の方は　宿泊先を紹介致しますので　yamakih1@icloud.comまで連絡ください
+            スタッフ一同お待ちしております。
+            「Instagram　@norikura_school　でも随時情報を発信しています！」</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div>
+    <a href="https://steach.jp/snow/" class="yoyakuLink" id="Yoyaku">スクール検索＆レッスン予約はこちら</a></div>
+  </section>
+  <button id="scrollTopBtn" onclick="scrollToTop()">▲</button>
+
+  <script src="./script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- フッター -->
+  <footer>
+    <div class="bottom">
+      <small class="footmyName">Copyright © Kosuke Kobayashi</small>
+      <div class="icons">
+        <i class="fab fa-twitter" id="tw"></i>
+        <i class="fab fa-instagram" id="in"></i>
+        <i class="fab fa-facebook-square" id="fa"></i>
+      </div>
+    </div>
+  </footer>
+
+
+  
+
+</body>
+</html>
