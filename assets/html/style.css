@@ -23,8 +23,8 @@ h1{
     font-family: "Kaisei Opti", serif;
     font-weight: 400;
     font-style: normal;
-  padding-top: 50px;
-  padding-left: 40px;
+    padding: 50px 0px 10px 40px;
+  
   font-size: 40px;
 }
 .nav{
@@ -117,7 +117,7 @@ select {
   align-items: center;
   font-size: 90px;
   color: rgb(0, 0, 0);
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 
   /* z-index: 1; */
@@ -314,7 +314,9 @@ justify-content: center;
 
 }
 .waku {
-  margin: 30px;
+  
+  margin-left: 30px;
+  margin-right: 30px;
   position: relative;
   padding:1em 1em;
 }
@@ -365,6 +367,12 @@ justify-content: center;
 .mr-3{
   width: 50vh;
 }
+.mt-0{
+  font-size: 30px;
+}
+.coment{
+  font-size: 20px;
+}
 .media{
   padding: 10px 20px;
   border: 1px solid #ddd;
@@ -410,6 +418,18 @@ justify-content: center;
   background:  antiquewhite;
   transition: transform 0.3s ease;
 }
+
+@media screen and (max-width:1300px){
+  .mt-0{
+    font-size: 20px;
+  }
+  .coment{
+    font-size: 15px;
+  }
+}
+
+
+
 
 @media screen and (max-width:780px){
   h1{
