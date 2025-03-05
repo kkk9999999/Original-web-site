@@ -23,6 +23,7 @@ const translations = {
         m2: "スキー＆スノボバスツアー！オリオンツアーが提供する全国１００か所以上のスキー場のツアーを取り扱い！関東近畿、長野、新潟、それぞれの人気スキー場ご紹介！",
         maru3: "スノーボードが楽しく安全に滑れる!? スノーサーフィンレッスンキャンプ(SSLC) 体験レポート",
         m3: "今シーズンは基本をしっかりと抑え安全にスノーボードを更に上達をしたいと考えていたSURF&SNOWスタッフ。z 安全に楽しく上達できるスノーサーフィンのレッスン「スノーサーフィンレッスンキャンプ(SSLC) 」があることを知り、早速体験してきたので、当日の様子をレポートします。",
+        tooltip: "気になる写真をクリックするとゲレンデの公式ホームページへとぶことができます。",
         maru4: "サンメドウズスキースクール【常設】",
         m4: "サンメドウズ清里スキー場（山梨県）ビギナー大歓迎！さらに腕を上げたい方も、楽しいレッスンでレベルアップ間違いなし。スキー・スノーボードを遊びながら6つのステップで上達するプログラム「スキッズ・キャンプ」が人気です。",
         maru5: "野沢温泉スキースクール【常設】",
@@ -56,6 +57,7 @@ const translations = {
         m2: "Ski & snowboard bus tour! We handle tours to more than 100 ski resorts nationwide provided by Orion Tour! Introducing popular ski resorts in Kanto Kinki, Nagano, and Niigata!",
         maru3: "Snowboarding can be fun and safe! Snow Surfing Lesson Camp (SSLC) Experience Report",
         m3: "This season, the SURF & SNOW staff wanted to further improve their snowboarding by focusing on the basics and safely.I learned that there is a Snow Surfing Lesson Camp (SSLC), a snow surfing lesson where you can improve your skills in a safe and fun way, and I immediately went to try it out, so I would like to report on what happened that day.",
+        tooltip: "Click on a photo that interests you to be taken to the ski resort's official website.",
         maru4: "Sun Meadows Ski School [Permanent]",
         m4: "Sun Meadows Kiyosato Ski Resort (Yamanashi Prefecture)    Beginners welcome! For those who want to further improve their skills, these fun lessons are sure to improve your level.``Skids Camp,'' a program that helps you improve your skiing and snowboarding skills through six steps, is popular.",
         maru5: "Nozawa Onsen Ski School [Permanent]",
@@ -88,6 +90,7 @@ const translations = {
         m2: "Ski at snowboard bus tour! Pinangangasiwaan namin ang mga paglilibot sa higit sa 100 ski resort sa buong bansa na ibinigay ng Orion Tour! Ipinapakilala ang mga sikat na ski resort sa Kanto Kinki, Nagano, at Niigata!",
         maru3: "Ang snowboarding ay maaaring maging masaya at ligtas! Ulat sa Karanasan sa Snow Surfing Lesson Camp (SSLC).",
         m3: "Sa season na ito, gustong pahusayin pa ng staff ng SURF & SNOW ang kanilang snowboarding sa pamamagitan ng pagtutok sa mga pangunahing kaalaman at ligtas.",
+        tooltip: "Mag-click sa isang larawan na interesado kang dalhin sa opisyal na website ng ski resort.",
         maru4: "Sun Meadows Ski School [Permanent]",
         m4: "Sun Meadows Kiyosato Ski Resort (Yamanashi Prefecture) Maligayang pagdating sa mga nagsisimula! Para sa mga gustong pagbutihin pa ang kanilang mga kasanayan, ang nakakatuwang mga aralin na ito ay tiyak na magpapahusay sa iyong antas.``Skids Camp,'' isang programang tumutulong sa iyong pagbutihin ang iyong mga kasanayan sa skiing at snowboarding sa pamamagitan ng anim na hakbang, ay sikat.",
         maru5: "Nozawa Onsen Ski School [Permanent]",
@@ -131,6 +134,7 @@ function changeLanguage() {
     document.getElementById("maru6").textContent = translations[lang].maru6;
     document.getElementById("m6").textContent = translations[lang].m6;
     document.getElementById("morelook").textContent = translations[lang].morelook;
+    document.getElementById("tooltip").textContent = translations[lang].tooltip;
 }
 
 
