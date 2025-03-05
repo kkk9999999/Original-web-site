@@ -1,59 +1,78 @@
-/* From Uiverse.io by Subaashbala */ 
-/* Prior to using this loader, please ensure that you have set a background image or background color, as the text is transparent and not designed with a solid color. */
-.loader {
-  --ANIMATION-DELAY-MULTIPLIER: 70ms;
-  padding: 0;
-  margin: 0;
+/* From Uiverse.io by G4b413l */ 
+.newtons-cradle {
+  --uib-size: 50px;
+  --uib-speed: 1.2s;
+  --uib-color: #474554;
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  overflow: hidden;
-}
-.loader span {
-  padding: 0;
-  margin: 0;
-  letter-spacing: -5rem;
-  animation-delay: 0s;
-  transform: translateY(4rem);
-  animation: hideAndSeek 1s alternate infinite cubic-bezier(0.86, 0, 0.07, 1);
-}
-.loader .l {
-  animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 0);
-}
-.loader .o {
-  animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 1);
-}
-.loader .a {
-  animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 2);
-}
-.loader .d {
-  animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 3);
-}
-.loader .ispan {
-  animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 4);
-}
-.loader .n {
-  animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 5);
-}
-.loader .g {
-  animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 6);
-}
-.letter {
-  width: fit-content;
-  height: 3rem;
-}
-.i {
-  margin-inline: 5px;
-}
-@keyframes hideAndSeek {
+  justify-content: center;
+  width: var(--uib-size);
+  height: var(--uib-size);
+ }
+ 
+ .newtons-cradle__dot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+  transform-origin: center top;
+ }
+ 
+ .newtons-cradle__dot::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 25%;
+  border-radius: 50%;
+  background-color: var(--uib-color);
+ }
+ 
+ .newtons-cradle__dot:first-child {
+  animation: swing var(--uib-speed) linear infinite;
+ }
+ 
+ .newtons-cradle__dot:last-child {
+  animation: swing2 var(--uib-speed) linear infinite;
+ }
+ 
+ @keyframes swing {
   0% {
-    transform: translateY(4rem);
+   transform: rotate(0deg);
+   animation-timing-function: ease-out;
   }
-  100% {
-    transform: translateY(0rem);
+ 
+  25% {
+   transform: rotate(70deg);
+   animation-timing-function: ease-in;
   }
-}
+ 
+  50% {
+   transform: rotate(0deg);
+   animation-timing-function: linear;
+  }
+ }
+ 
+ @keyframes swing2 {
+  0% {
+   transform: rotate(0deg);
+   animation-timing-function: linear;
+  }
+ 
+  50% {
+   transform: rotate(0deg);
+   animation-timing-function: ease-out;
+  }
+ 
+  75% {
+   transform: rotate(-70deg);
+   animation-timing-function: ease-in;
+  }
+ }
+ 
+
+
 
 
 
