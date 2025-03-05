@@ -167,3 +167,16 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    window.onload = function () {
+        let loadingScreen = document.getElementById("loading-screen");
+        loadingScreen.style.transition = "opacity 0.5s";
+        loadingScreen.style.opacity = 0;
+        setTimeout(function () {
+            loadingScreen.style.display = "none";
+        }, 500);
+    };
+});
