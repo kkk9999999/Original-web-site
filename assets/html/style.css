@@ -212,13 +212,10 @@ select {
     background: black;
     transition: 0.3s;
   }
-  
-  /* チェックボックスを隠す */
   .menu-checkbox {
     display: none;
   }
-  
-  /* メニュー開閉のアニメーション */
+
   .menu-checkbox:checked + .menu-button span:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
   }
@@ -230,8 +227,6 @@ select {
   .menu-checkbox:checked + .menu-button span:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
   }
-  
-  /* メニュー表示 */
   .menu-checkbox:checked ~ .menu {
     right: 0;
   }
@@ -290,7 +285,7 @@ justify-content: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 15px;
-  max-width: 1200px;
+  width: 95%;
   margin: 0 auto;
 }
 .video-grid:before,.video-grid:after
@@ -343,8 +338,6 @@ justify-content: center;
 
 
 /* gelande */
-
-/* ボタンのスタイル */
 .gelandetag{
   display: flex;
   align-items: end;
@@ -504,7 +497,6 @@ justify-content: center;
   padding: 10px;
 }
 
-/* 2 */
 .newslists{
   display: flex;
   flex-direction: row;
@@ -520,8 +512,6 @@ justify-content: center;
   transition: transform 0.3s ease;
 }
 
-
-/* From Uiverse.io by PriyanshuGupta28 */ 
 .rating {
   display: inline-block;
 }
@@ -545,7 +535,7 @@ justify-content: center;
 .rating input:checked ~ label,
 .rating label:hover,
 .rating label:hover ~ label {
-  color: #6f00ff;
+  color: #fad311;
   transition: color 0.3s;
 }
 
@@ -678,13 +668,12 @@ justify-content: center;
   text-align: center;
   font-size: 24px;
   cursor: pointer;
-  display: none; /* 初期状態では非表示 */
+  display: none;
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* ホバー時のスタイル */
 #scrollTopBtn:hover {
   background-color: #53a5fd;
 }
