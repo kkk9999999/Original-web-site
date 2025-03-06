@@ -175,17 +175,10 @@ function scrollToTop() {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    window.onload = function () {
-        let loadingScreen = document.getElementById("loading-screen");
-        let content = document.getElementById("content");
 
-        // フェードアウト
-        loadingScreen.style.opacity = 0;
 
-        setTimeout(function () {
-            loadingScreen.style.display = "none";
-            content.style.display = "block";
-        }, 500); // 0.5秒後にロード画面を消す
-    };
+window.addEventListener("load", function() {
+    document.getElementById("loadingScreen").style.display = "none";
 });
+
+
