@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  background-image: url(./mokume01.png);
 }
 
 /* ロード */
@@ -43,7 +44,8 @@ body{
   font-family: "Yomogi", cursive;
   font-weight: 400;
   font-style: normal;
-  background-color: #D8C4B6;
+  background-image: url(./mokume04.png);
+  /* background-color: #D8C4B6; */
   margin: 0px;
 }
 
@@ -83,7 +85,13 @@ h2{
 select {
   padding: 5px;
   font-size: 16px;
+  /* background-color: red; */
+
+  option{
+    background-color: red;
+  }
 }
+
 
 
 
@@ -246,6 +254,9 @@ select {
 
 
 /*hazime*/
+.purpose{
+  margin-top: 110px;
+}
 .mokume{
   margin: 0;
   position: relative;
@@ -667,8 +678,8 @@ justify-content: center;
   right: 20px;
   width: 50px;
   height: 50px;
-  background-color: #8bc0f8;
-  color: white;
+  background-color: rgb(255, 144, 144);
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 50%;
   text-align: center;
@@ -679,7 +690,9 @@ justify-content: center;
   justify-content: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+/* .scrollTopBtn{
+  background-color: #5aa4f2;
+} */
 #scrollTopBtn:hover {
   background-color: #53a5fd;
 }
@@ -687,7 +700,7 @@ justify-content: center;
 
 
 /* foot */
-footer {
+footer{
   text-align: center;
   background-color: #213555;
   padding: 10px;
