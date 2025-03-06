@@ -1,3 +1,4 @@
+// 言語
 const translations = {
     ja: {
         home1: "始め方",
@@ -138,8 +139,6 @@ function changeLanguage() {
 }
 
 
-
-
 const imageMap = {
     "ja": "./assets/html/スクリーンショット 2025-02-27 135308.png",
     "en": "./assets/html/スクリーンショット 2025-03-01 192635.png",
@@ -154,9 +153,7 @@ language.addEventListener("change", function () {
 
 
 
-
-
-
+// TOPぼたん
 window.onscroll = function() {
     let button = document.getElementById("scrollTopBtn");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -169,14 +166,16 @@ window.onscroll = function() {
 
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    const duration = 3000; // 3秒（3000ミリ秒）
+    const start = window.scrollY;
+    const startTime = performance.now();
 }
 
 
 
 
 
-
-
+// ロード画面
 window.addEventListener("load", function() {
     document.getElementById("loadingScreen").style.display = "none";
 });

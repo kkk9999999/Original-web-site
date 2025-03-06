@@ -176,7 +176,7 @@ select {
     right: -250px;
     width: 250px;
     height: 100%;
-    background: #333;
+    background: #333333f2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -209,7 +209,7 @@ select {
     display: block;
     height: 4px;
     width: 100%;
-    background: black;
+    background: rgb(0, 0, 0);
     transition: 0.3s;
   }
   .menu-checkbox {
@@ -667,7 +667,7 @@ justify-content: center;
   right: 20px;
   width: 50px;
   height: 50px;
-  background-color: rgb(119, 201, 255);
+  background-color: rgb(91, 189, 255);
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 50%;
@@ -678,13 +678,12 @@ justify-content: center;
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ 
 }
-/* .scrollTopBtn{
-  background-color: #5aa4f2;
-} */
 #scrollTopBtn:hover {
-  background-color: #53a5fd;
+  background-color: #459fff;
 }
+
 
 
 
