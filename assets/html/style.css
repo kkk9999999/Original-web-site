@@ -140,8 +140,6 @@ select {
   object-fit: cover;
 }
 #title{
-  /* border-color: #ddd; */
-  /* font-family: Georgia; */
   font-family: Times New Roman;
   display: flex;
   flex-direction: row;
@@ -242,6 +240,14 @@ select {
     right: 0;
   }
 }
+@media screen and (max-width:500px){
+  #title{
+    font-size: 70px;
+  }
+
+}
+
+
 
 /*hazime*/
 .mokume{
